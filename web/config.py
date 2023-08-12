@@ -13,6 +13,6 @@ class Config(object):
     SQLALCHEMY_DATABASE_URI = 'mssql+pyodbc://' + SQL_USER_NAME + '@' + SQL_SERVER + ':' + SQL_PASSWORD + '@' + SQL_SERVER + ':1433/' + SQL_DATABASE + '?driver=ODBC+Driver+18+for+SQL+Server'
     SQLALCHEMY_TRACK_MODIFICATIONS = False
 
-    BLOB_ACCOUNT = os.environ.get('BLOB_ACCOUNT_KEY')
+    BLOB_ACCOUNT_KEY = os.environ.get('BLOB_ACCOUNT_KEY')
     BLOB_STORAGE_KEY = os.environ.get('BLOB_STORAGE_KEY')
-    BLOB_CONTAINER = os.environ.get('BLOB_CONTAINER_KEY')
+    BLOB_CONTAINER_KEY = os.environ.get('BLOB_CONTAINER_KEY')
